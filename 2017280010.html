@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head><title>Enes Furkan Ağrı - 2017280010</title></head>
+<body>
+<h2>Enes Furkan AĞRI - 2017280010</h2>
+
+<label for="id1">Metin kutusu 1</label>
+<input type='text' id='id1' />
+
+<br>
+<label for="id2">Metin kutusu 2</label>
+<input type='text' id='id2' />
+
+<br><br>
+<button type="button" id='topla'>Topla</button>
+
+<br><br>
+<label for="id3">Metin kutusu 3</label>
+<input type='text' id='id3' />
+
+<br>
+<label for="id4">Metin kutusu 4</label>
+<input type='text' id='id4' />
+
+<br><br>
+<button type="button" id='yapistir'>Yapıştır</button>
+
+ <script type="text/javascript">
+ var btn1=document.getElementById("topla");
+ btn1.onclick=function()
+ {
+   var mk1=Number(document.getElementById("id1").value);
+   var mk2=Number(document.getElementById("id2").value);
+   var toplam=mk1+mk2;
+   if(isNaN(toplam))
+   {
+     alert("Girdiler Numerik Değil.");
+   }
+   else
+   {
+     alert("Toplam = "+toplam);
+   }
+  }
+
+  var btn2=document.getElementById("yapistir");
+  btn2.onclick=function()
+ {
+   var mk3=document.getElementById("id3").value;
+   var mk4=document.getElementById("id4").value;
+   var string=mk3.concat(" ",mk4);
+   alert(string);
+ }
+</script>
+            <!--kaynakca
+            yazilimkodlama.com
+            w3schools.com
+            btdersleri.com-->
+</body>
+</html>
